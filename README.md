@@ -4,16 +4,16 @@
 - 03_modelo_cnn_lstm_atencion_final.ipynb: Entrenamiento y análisis del modelo CNN-LSTM con capa de atención
 - 04_modelo_transformer_final: Entrenamiento y análisis del modelo Tranformer encoder y comparativa de resultados con los demás modelos
 
-🎯 **EL OBJETIVO**
+🎯 **EL OBJETIVO**:
 **Estimar la Vida Útil Restante (RUL)** de motores de turbofán a partir de series temporales de sensores, y determinar qué arquitectura equilibra mejor precisión, coste computacional e interpretabilidad.
 Intervenir tarde es un fallo en operación. Intervenir pronto es tirar vida útil que aún quedaba.
 
-🔧 **EL MÉTODO**
+🔧 **EL MÉTODO**:
 Dataset **NASA C-MAPSS** y sus cuatro subconjuntos (FD001–FD004).
 Pipeline reproducible: objetivo de degradación lineal a trozos, clustering no supervisado de los regímenes operativos, normalización dentro de cada régimen y ventanas deslizantes sin fuga de información.
 Tres arquitecturas: LSTM apilada, CNN-LSTM con atención y codificador Transformer. Evaluadas con RMSE, MAE y la puntuación de NASA, que penaliza más sobreestimar la vida restante: el error peligroso.
 
-📊 **LOS RESULTADOS**
+📊 **LOS RESULTADOS**:
 RMSE sobre FD001, media de tres semillas:
 → **LSTM**: 13,86 ± 0,19
 → **CNN-LSTM + atención**: 14,04 ± 0,24
